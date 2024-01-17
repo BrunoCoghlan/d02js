@@ -9,10 +9,38 @@
 </head>
 
 <body>
-    <!-- FOTO QUE SE LE AGREGA MARCO ROJO, fcm = foto con marco -->
-    <img onclick="marco()" class="fcm" src="http://placekitten.com/g/400/400" alt="foto random de gatito">
-    <p>Haz Click a la foto! y soprendete!</p>
 
+    <!-- FOTO QUE SE LE AGREGA MARCO ROJO, fcm = foto con marco -->
+    <div class="ej">
+        <h1>Desafio JS Numero 2</h1>
+        <h3>Ejercicio 1</h3>
+        <p>
+            Se debe construir una página con una única imagen, al hacerle click a la imagen se le debe agregar un borde
+            rojo de 2 pixeles, al hacerle click nuevamente se le debe quitar el borde. (Total: 2 puntos)
+        </p>
+        <img onclick="marco()" class="fcm" src="http://placekitten.com/g/400/400" alt="foto random de gatito">
+        <p>Haz Click a la foto! y soprendete!</p>
+    </div>
+
+    <div class="ej">
+        <h3>Ejercicio 2</h3>
+        <p>
+            Se debe construir una página web que permita pedir hasta 10 stickers de los 3 tipos disponibles. Para eso
+            deberá existir un input debajo de cada imagen donde el usuario podrá ingresar un número. En caso de que la
+            suma de todos los stickers seleccionados sea menor o igual 10 se indicará en un párrafo nuevo la cantidad de
+            stickers llevados. Ejemplo "llevas 5 stickers" en cualquier otro caso se mostrará un texto que dice "Llevas
+            demasiados stickers". (Total: 4 puntos)
+        </p>
+        <section class="grid">
+            <img src="http://placekitten.com/g/150/150" alt="foto random de gatito" width="200" height="200">
+            <img src="http://placekitten.com/g/150/170" alt="foto random de gatito" width="200" height="200">
+            <img src="http://placekitten.com/g/150/140" alt="foto random de gatito" width="200" height="200">
+            <input id="input1" type="number" min="0" value="0">
+            <input id="input2" type="number" min="0" value="0">
+            <input id="input3" type="number" min="0" value="0">
+        </section>
+        <p id="mjs">Te faltan stickers</p>
+    </div>
 
 
 
