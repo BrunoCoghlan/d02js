@@ -11,18 +11,18 @@
 <body>
 
     <!-- FOTO QUE SE LE AGREGA MARCO ROJO, fcm = foto con marco -->
-    <div class="ej">
-        <h1>Desafio JS Numero 2</h1>
+    <h1>Desafio JS Numero 2</h1>
+    <section class="ej">
         <h3>Ejercicio 1</h3>
         <p>
             Se debe construir una página con una única imagen, al hacerle click a la imagen se le debe agregar un borde
             rojo de 2 pixeles, al hacerle click nuevamente se le debe quitar el borde. (Total: 2 puntos)
         </p>
-        <img onclick="marco()" class="fcm" src="http://placekitten.com/g/400/400" alt="foto random de gatito">
+        <img class="fcm" src="http://placekitten.com/g/400/400" alt="foto random de gatito">
         <p>Haz Click a la foto! y soprendete!</p>
-    </div>
-
-    <div class="ej">
+    </section>
+    <!-- Stickers que solo se pueden seleccionar hasta 10 maximos -->
+    <section class="ej">
         <h3>Ejercicio 2</h3>
         <p>
             Se debe construir una página web que permita pedir hasta 10 stickers de los 3 tipos disponibles. Para eso
@@ -31,17 +31,66 @@
             stickers llevados. Ejemplo "llevas 5 stickers" en cualquier otro caso se mostrará un texto que dice "Llevas
             demasiados stickers". (Total: 4 puntos)
         </p>
-        <section class="grid">
+        <div class="grid">
             <img src="http://placekitten.com/g/150/150" alt="foto random de gatito" width="200" height="200">
             <img src="http://placekitten.com/g/150/170" alt="foto random de gatito" width="200" height="200">
             <img src="http://placekitten.com/g/150/140" alt="foto random de gatito" width="200" height="200">
-            <input id="input1" type="number" min="0" value="0">
-            <input id="input2" type="number" min="0" value="0">
-            <input id="input3" type="number" min="0" value="0">
-        </section>
+            <input id="input1" type="text">
+            <input id="input2" type="text">
+            <input id="input3" type="text">
+        </div>
+        <button id="btn">Verificar</button>
         <p id="mjs">Te faltan stickers</p>
-    </div>
-
+    </section>
+    <!-- [assword secretos ] -->
+    <section class="ej">
+        <h3>Ejercicio 3</h3>
+        <p>
+            Se debe construir una página con 3 select y opciones con dígitos del 1 al 9, al hacer
+            click a la opción ingresar se debe verificar que el password sea 911 y en ese caso
+            mostrar debajo del botón ingresar, un párrafo con el contenido "password 1
+            correcto", en caso de que el password sea 714 se debe mostrar en el párrafo
+            "password 2 es correcto", si ingresa otro valor se debe mostrar "password
+            incorrecto". (Total: 4 puntos)
+        </p>
+        <div>
+            <select name="select" id="pswd1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+            </select>
+            <select name="select" id="pswd2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+            </select>
+            <select name="select" id="pswd3">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+            </select>
+        </div>
+        <button id="btnpswd">Enviar Password</button>
+        <p id="mjspswd"></p>
+    </section>
 
 
     <script src="./assets/js/app.js"></script>
